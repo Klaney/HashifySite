@@ -2,7 +2,8 @@
 module.exports = function(sequelize, DataTypes) {
   var links = sequelize.define('links', {
     url: DataTypes.STRING,
-    hash: DataTypes.STRING
+    hash: DataTypes.STRING,
+    count: DataTypes.INTEGER
   }, {
     classMethods: {
       associate: function(models) {
